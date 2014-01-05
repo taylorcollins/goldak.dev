@@ -1,0 +1,102 @@
+@charset "UTF-8";
+/* CSS Document */
+
+
+/* MULTI-FUNCTION STYLES*/
+/*Test Comment */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body { line-height: 1; background: url(../images/background-pattern.jpg)repeat top left; background-repeat: repeat; background-attachment: fixed; font-family: Verdana, Arial, sans-serif; font-size: 13px; }
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+.cf:before, .cf:after { content: " "; /* 1 */ display: table; /* 2 */ }
+.cf:after { clear: both; }
+/** * For IE 6/7 only - * Include this rule to trigger hasLayout and contain floats.*/
+.cf {*zoom: 1; }
+
+
+/*HEADER*/
+
+header { width: 100%; min-width: 931px; }
+header img { margin: 0 auto; padding: 20px 130px 20px 0; display: block; }
+header #tagline { min-width: 931px; height: 40px; padding: 0 0 0 50px; }
+header p { width: 931px; margin: 0 auto; text-align: left; line-height: 40px; }
+
+/*CONTENT*/
+
+section{ width: 931px; height: 538px; margin: 0px auto; padding: 5px 20px; }
+section ul#panes { 
+	list-style: none;
+	background: url(../images/panes-background.png) no-repeat 0 0;
+	position: relative;
+	width: 931px;
+	height: 538px;	
+	margin: 0;
+	padding: 0;}
+	
+section ul#panes li {
+	position: absolute;
+}
+section ul#panes li a{
+	display: block;
+	height: 100%;
+	
+}
+section ul#panes li#goldak { width: 342px; height: 538px; }
+section ul#panes li#sewerin { width: 342px; height: 538px; left: 296px; }
+section ul#panes li#locating { width: 342px; height: 538px; left: 590px;}
+section ul#panes li#locating img, li#sewerin img, li#goldak img { opacity: .5; transition: opacity .5s ease-in-out; -moz-transition: opacity .5s ease-in-out; -webkit-transition: opacity .5s ease-in-out; }
+section ul#panes li#locating img { position: relative; top: 220px; left: 70px; }
+section ul#panes li#sewerin img { position: relative; top: 180px; left: 35px; }
+section ul#panes li#goldak img { position: relative; top: 210px; left: 25px; }
+
+
+section ul#panes li a:hover { background: url(../images/panes-background.png) no-repeat 0 0; }
+section ul#panes li#locating a:hover img,li#sewerin a:hover img, li#goldak a:hover img { opacity: 1; transition: opacity .5s ease-in-out; -moz-transition: opacity .5s ease-in-out; -webkit-transition: opacity .5s ease-in-out; }
+
+section ul#panes li#goldak a:hover { background-position: 0 -538px; }
+section ul#panes li#sewerin a:hover { background-position: -340px -538px; }
+section ul#panes li#locating a:hover { background-position: -680px -538px; }
+section ul#panes li#locating a:hover { background-position: -680px -538px; }
+
+section #descriptions { padding: 0 0 0 45px; }
+section #descriptions p { width: 275px; padding: 10px 0 0 20px; float: left; }
+
+footer { height: 100px; display: block; }
+
